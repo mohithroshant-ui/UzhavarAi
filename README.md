@@ -34,4 +34,53 @@ Uzhavar AI is a real-time Smart Farming Web Application built using **Streamlit*
 ---
 
 ## 📁 Project Directory Structure
+Uzhavar_AI/
+│
+├─ app.py
+├─ requirements.txt
+├─ train_model.py
+│
+├─ .streamlit/
+│ └─ config.toml
+│
+├─ data/
+│ └─ crop_data.csv
+│
+├─ model/
+│ └─ crop_model.pkl
+│
+├─ database/
+│ └─ history.db (Auto-generated)
+│
+├─ assets/
+│ └─ banner.jpg
+│
+└─ pages/
+├─ 1_Crop_Advisor.py
+├─ 2_Weather_Update.py
+├─ 3_Fertilizer_Guide.py
+└─ 4_History_Dashboard.py
+
+---
+
+## ⚙ Installation & Setup
+
+### 1️⃣ Install Dependencies
+
+pip install -r requirements.txt
+python train_model.py
+streamlit run app.py
+
+## 🏁 Conclusion
+
+Uzhavar AI delivers **smart farming intelligence** by using  
+Machine Learning, Data Science and Real-Time Weather analytics  
+to assist farmers in making **profitable crop decisions**.
+
+This project bridges the gap between **technology and agriculture**,  
+ensuring better **productivity**, **profitability**, and  
+**sustainability** in Indian farming 🇮🇳🌱
+
+> **"Empowering Farmers Through Intelligent Technology."** 🚜✨
+
 
