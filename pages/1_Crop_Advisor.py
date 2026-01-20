@@ -41,7 +41,10 @@ rain = st.slider("Rainfall (mm)", 0.0, 400.0, 100.0)
 
 if st.button("Predict 🌱"):
     try:
-        crop = model.predict([[N,P,K,temp,hum,ph,rain]])[0]
+        import pandas as pd
+        input_data = pd.DataFrame([[N, P, K, temp, hum, ph, rain]], 
+                                  columns=['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall'])
+        crop = model.predict(input_data)[0]
         st.success(f"Best Crop: {crop}")
 
         profit = crop_profit.get(crop, {"price": 0, "yield": 0})["price"] * crop_profit.get(crop, {"price": 0, "yield": 0})["yield"]
